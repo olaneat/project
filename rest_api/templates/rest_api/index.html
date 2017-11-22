@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en">
+<html>
+<head>
+	{%block tittle %}<title>My BucketList home page</title>{% endblock %}
+</head>
+<body>
+
+{% block content %}
+<p><em> Bucklist List </em> a proper way to set and organize your goals</p>
+<h3> The Bucketlist contains the following lists</h3>
+<div class="trending">
+	a
+</div>
+<div class="container">
+	<div class="row">
+		{%block slidebar %}
+		<ul class="slidebar-nav">
+			<li><a href="{% url 'dashboard' %}">Home</a></li>
+			<li><a href="{%url 'sign_up' %}">Sign up</a></li>
+			<li><a href="{%url 'login' %}">Sign in</a></li>
+			
+
+		</ul>
+	{% endblock %}
+	<div>
+		{% endblock %}
+
+</body>
+</html>
+<a href = "{%url 'index'  %}" >home</a>

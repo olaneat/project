@@ -1,0 +1,17 @@
+<h4> See <a href="{% url 'trending' %}"></a>Trending Goals</h4>
+
+<div class="container">
+	<div class="row">
+		{%block slidebar %}
+		<ul class="slidebar-nav">
+			<li><a href="{% url 'dashboard' %}">Home</a></li>
+			<li><a href="{%url 'sign_up' %}">Sign up</a></li>
+			<li><a href="{%url 'sign_in' %}">Sign in</a></li>
+			
+
+		</ul>
+	{% endblock %}
+	<div>
+
+
+<a href = "{%url 'index'  %}" >home</a>
